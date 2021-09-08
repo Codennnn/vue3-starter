@@ -11,7 +11,7 @@ watch(count, () => {
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="">{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:
@@ -49,8 +49,8 @@ label {
 
 code {
   padding: 2px 4px;
-  background-color: #eee;
   color: #304455;
+  background-color: #eee;
   border-radius: 4px;
 }
 </style>

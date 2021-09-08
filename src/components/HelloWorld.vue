@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 
 defineProps<{ msg: string }>()
 
 const count = ref(0)
+
+watch(count, () => {
+  console.log(count.value)
+})
 </script>
 
 <template>
@@ -44,9 +48,9 @@ label {
 }
 
 code {
-  background-color: #eee;
   padding: 2px 4px;
-  border-radius: 4px;
+  background-color: #eee;
   color: #304455;
+  border-radius: 4px;
 }
 </style>

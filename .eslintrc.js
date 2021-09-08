@@ -36,6 +36,7 @@ module.exports = {
         ignore: ['^@/', '^@@/'],
       },
     ],
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
   ignorePatterns: [
     'dist',

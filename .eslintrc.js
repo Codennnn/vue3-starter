@@ -30,6 +30,12 @@ module.exports = {
     'simple-import-sort/exports': 1,
     'sort-imports': 0,
     'import/order': 0,
+    'import/no-unresolved': [
+      2,
+      {
+        ignore: ['^@/', '^@@/'],
+      },
+    ],
   },
   ignorePatterns: [
     'dist',

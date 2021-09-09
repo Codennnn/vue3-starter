@@ -1,6 +1,7 @@
 import type { App } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
+import MainLayout from '@/layouts/MainLayout.vue'
 import Home from '@/views/Home.vue'
 
 const routes = [
@@ -8,10 +9,19 @@ const routes = [
     path: '/',
     redirect: '/home',
   },
+
   {
-    path: '/home',
-    name: 'home',
-    component: Home,
+    path: '/',
+    meta: { title: 'xxx', icon: 'monitor', openKey: 'dashboard' },
+    component: MainLayout,
+    children: [
+      {
+        path: 'home',
+        name: 'Home',
+        component: Home,
+        meta: { title: '统计面板', openKey: 'dashboard' },
+      },
+    ],
   },
 ]
 
@@ -21,9 +31,3 @@ const router = createRouter({
 })
 
 export default router
-
-export function setupRouter(app: App) {
-  app.use(router)
-  // 创建路由守卫
-  // createRouterGuards(router)
-}

@@ -1,10 +1,10 @@
-import type { App } from 'vue'
+import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import MainLayout from '@/layouts/MainLayout.vue'
 import Home from '@/views/Home.vue'
 
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     redirect: '/home',
@@ -19,7 +19,16 @@ const routes = [
         path: 'home',
         name: 'Home',
         component: Home,
-        meta: { title: '统计面板', openKey: 'dashboard' },
+      },
+      {
+        path: 'product',
+        name: 'Product',
+        component: () => import('@/views/Product.vue'),
+      },
+      {
+        path: 'car-policy',
+        name: 'CarPolicy',
+        component: () => import('@/views/CarPolicy.vue'),
       },
     ],
   },

@@ -1,13 +1,12 @@
-<script setup lang="ts"></script>
-
 <template>
-  <router-view />
+  <RouterView />
 </template>
+
+<script setup lang="ts"></script>
 
 <style lang="scss">
 #app {
-  @apply min-h-screen;
-
+  height: 100%;
   background: $app-bg;
 }
 </style>

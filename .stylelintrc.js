@@ -9,6 +9,7 @@ module.exports = {
 
   rules: {
     'at-rule-no-unknown': null,
+    'no-irregular-whitespace': null,
     'scss/at-rule-no-unknown': [
       true,
       {

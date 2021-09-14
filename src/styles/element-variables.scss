@@ -1,0 +1,24 @@
+$--colors: (
+  'primary': (
+    'base': #3b73e6,
+  ),
+  'success': (
+    'base': #21ba45,
+  ),
+  'warning': (
+    'base': #fcb106,
+  ),
+  'danger': (
+    'base': #f05a23,
+  ),
+  'error': (
+    'base': #f05a23,
+  ),
+  'info': (
+    'base': #47c9d5,
+  ),
+);
+
+$--font-path: 'element-plus/theme-chalk/fonts';
+
+@import 'element-plus/packages/theme-chalk/src/index';

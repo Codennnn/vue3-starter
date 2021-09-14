@@ -1,6 +1,7 @@
 {
-  "name": "venus-next",
+  "name": "xxx",
   "version": "0.0.0",
+  "private": true,
   "license": "UNLICENSED",
   "scripts": {
     "start": "vite",
@@ -9,24 +10,16 @@
     "serve": "vite preview",
     "prepare": "husky install",
     "deps": "yarn upgrade-interactive --latest",
-    "lint:es": "eslint \"**/*.{js,jsx,ts,tsx,vue}\"",
+    "lint:es": "eslint \"src/**/*.{js,jsx,ts,tsx,vue}\"",
     "lint:style": "stylelint \"src/**/*.{css,scss,vue}\""
   },
-  "lint-staged": {
-    "*.{mjs,js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ],
-    "*.{css,less,scss}": [
-      "stylelint --fix"
-    ],
-    "*.{md,json}": [
-      "prettier --write"
-    ]
-  },
   "dependencies": {
+    "@icon-park/vue-next": "^1.3.5",
+    "axios": "^0.21.4",
     "element-plus": "^1.1.0-beta.9",
     "vue": "^3.2.6",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.31.0",
@@ -56,7 +49,6 @@
     "tailwindcss": "^2.2.12",
     "typescript": "^4.3.2",
     "vite": "^2.5.2",
-    "vite-plugin-element-plus": "^0.0.12",
     "vue-tsc": "^0.3.0"
   }
 }

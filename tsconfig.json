@@ -7,8 +7,10 @@
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "noImplicitAny": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "lib": ["esnext", "dom"],
     "baseUrl": "./",
     "paths": {

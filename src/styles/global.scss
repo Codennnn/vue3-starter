@@ -1,14 +1,10 @@
 html,
 body {
+  height: 100%;
   overflow-x: hidden;
   font-size: $root-font-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  height: initial !important;
-  min-height: 100%;
 }
 
 img {

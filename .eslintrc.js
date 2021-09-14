@@ -36,7 +36,9 @@ module.exports = {
         ignore: ['^@/', '^@@/'],
       },
     ],
+    'vue/no-unused-vars': 1,
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    'tailwindcss/no-custom-classname': 0,
   },
   ignorePatterns: [
     'dist',
@@ -44,5 +46,6 @@ module.exports = {
     '!.eslintrc.js',
     '!.prettierrc.js',
     '!.stylelintrc.js',
+    '!.lintstagedrc.js',
   ],
 }

@@ -1,7 +1,10 @@
 import { createStore, useStore as baseUseStore } from 'vuex'
 
-// 创建一个新的 store 实例
-const store = createStore({
+interface State {
+  isSiderOpened: boolean
+}
+
+const store = createStore<State>({
   state() {
     return {
       isSiderOpened: true,

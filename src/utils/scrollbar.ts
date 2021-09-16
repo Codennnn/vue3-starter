@@ -1,5 +1,6 @@
 // 修改 Window 系统浏览器的滚动条的默认样式，美化效果
 void (function styleTheWindowsScrollbar() {
+  'use strict'
   const IS_WINDOWS = navigator.platform.indexOf('Win') > -1
   if (IS_WINDOWS) {
     const css = `
@@ -23,7 +24,7 @@ void (function styleTheWindowsScrollbar() {
     `
     const head = document.head || document.getElementsByTagName('head')[0]
     const style = document.createElement('style')
-    head.appendChild(style)
     style.innerText = css
+    head.appendChild(style)
   }
 })()

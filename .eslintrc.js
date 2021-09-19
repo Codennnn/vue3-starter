@@ -38,6 +38,7 @@ module.exports = {
     ],
     'vue/no-unused-vars': 1,
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    '@typescript-eslint/consistent-type-imports': 1,
     'tailwindcss/no-custom-classname': 0,
   },
   ignorePatterns: [
